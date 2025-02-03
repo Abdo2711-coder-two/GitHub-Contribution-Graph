@@ -70,7 +70,7 @@ const points = [
 // Function to generate a commit date starting from 3 years ago
 const getCommitDate = (x, y) => {
     return moment()
-        .subtract(3, "y") // Go back 3 years
+        .subtract(5, "y") // Go back 3 years
         .startOf('year')  // Start from the beginning of the year
         .add(x, "w")      // Move across weeks
         .add(y, "d")      // Move within week
